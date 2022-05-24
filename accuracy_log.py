@@ -1,3 +1,6 @@
+# This python file and associated functionalities have been developed by Sarah Theuerkauf!
+# Therefore, the following implementation must not be considered as part of my software contribution and is only included since "class_accuracy" resorts to "mapping".
+
 #///////////// Imports
 import numpy as np
 import tensorflow as tf

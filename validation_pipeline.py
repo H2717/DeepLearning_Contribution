@@ -1,10 +1,8 @@
 # This is the seed for your validation pipeline. It will allow you to load a model and run it on data from a directory.
 
 # //////////////////////////////////////// Setup
-
 import numpy as np
 import tensorflow as tf
-import accuracy_log as alog   # Sarah Theuerkauf
 import class_accuracy as clac   # Hanna Ludes
 
 # //////////////////////////////////////// Load model
@@ -15,7 +13,7 @@ model = tf.keras.models.load_model(import_path)
 # //////////////////////////////////////// Load data
 # You will need to unzip the respective batch folders.
 # Obviously Batch_0 is not sufficient for testing as you will soon find out.
-data_root = "./safetyBatches/Batch_5/Batch_5/"
+data_root = "./safetyBatches/Batch_5/Batch_5/"    # using Batch_5 for validation
 batch_size = 32
 img_height = 224
 img_width = 224
@@ -33,7 +31,7 @@ class_names = np.array(test_ds.class_names)
 print('classes available: ', class_names)
 
 
-# get the ground truth labels
+# Get the ground truth labels
 test_labels = np.concatenate([y for x, y in test_ds], axis=0)
 for i in range(0, len(test_labels)):
     test_labels[i] = int(class_names[test_labels[i]])
@@ -48,13 +46,12 @@ test_ds = test_ds.map(lambda x, y: (normalization_layer(x), y))  # Where x—ima
 # //////////////////////////////////////// Inference.
 predictions = model.predict(test_ds)
 predictions = np.argmax(predictions, axis=1)
-#print('Predictions: ', predictions)
-#print('Ground truth: ', test_labels)
+print('Predictions: ', predictions)
+print('Ground truth: ', test_labels)
 
 
 # //////////////////////////////////////// Let the validation begin.
-# Functions each need ground truth array and predictions array.
-#alog.get_log(test_labels, predictions)
+# Function calculates accuracy for each class with help of ground truth array and predictions array.
 clac.class_accuracy(test_labels, predictions)
 
 # There is more and this should get you started: https://www.tensorflow.org/api_docs/python/tf/keras/metrics

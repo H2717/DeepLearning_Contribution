@@ -4,6 +4,9 @@ import os
 import cv2
 import argparse
 
+# define path of text file in case no keywords are provided by user
+file_path = "./keywords.txt"
+
 # initiate list of keywords
 keyword_list = []
 
@@ -25,16 +28,25 @@ args = vars(ap.parse_args())
 if args["keyword"]:
     keyword_list = args["keyword"].split(",")
 else:
-    with open('./keywords.txt', mode='r', encoding="utf_8") as f:
-        keyword_list = list(f)
-        for i in range(len(keyword_list)):
-            keyword_list[i] = keyword_list[i].replace('\n', '')
-# Fehlerfall: File nicht da, File leer, Fehler im File
+    try:
+        if os.path.getsize(file_path) > 0:
+            with open(file_path, mode="r", encoding="utf_8") as f:
+                keyword_list = list(f)
+                for i in range(len(keyword_list)):
+                    keyword_list[i] = keyword_list[i].replace('\n', '')
+        # error handling: keyword file does exist but is empty
+        else:
+            print("Unfortunately 'keywords.txt' is currently empty, please fill with descriptive keywords for image search.")
+    # error handling: keyword file does not exist or cannot be read
+    except FileNotFoundError as e:
+        print(f"{e} \n"
+              "FileNotFoundError was successfully handled: "
+              "Please include file 'keywords.txt' in directory or manually define keywords for image search next time.")
 
 # create filters for image search
 filters = dict(
-    size='large',
-    license='commercial,modify',
+    size="large",
+    license="commercial,modify",
 )
 
 

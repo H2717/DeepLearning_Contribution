@@ -2,7 +2,7 @@
 This is a repository for submitting my software contribution and report in the course of studying safety concepts for deep learning perception applications at DHBW Ravensburg.
 
 ## Software Contribution
-Please note that the files *accuracy_log.py* and *signnames* do belong to Sarah Theuerkauf and are to be excluded from the scope of my SW contribution. However, they are part of this repository since elements of my SW implementation make use of the *mapping* function which is defined therein. 
+Please note that the files *accuracy_log.py* and *signnames.txt* belong to Sarah Theuerkauf and are to be excluded from the scope of my SW contribution. However, they are part of this repository since elements of my SW implementation make use of the *mapping* function which is defined therein. 
 
 ### [Feature 1]: class_accuracy.py
 The file *class_accuracy.py* defines a function that can be used to calculate the individual accuracy of each class in safetyBatch and has already been included in the provided validation pipeline, so to run this feature please execute the following command:
@@ -33,8 +33,8 @@ matplotlib==3.5.2
 ```
 
 ## Report
-The corresponding report to this SW contribution can be find in *tbd*.
-It shall outline the motivation for implementing each feature and elaborate on the possible challenges with training and validating deep learning perception applications including specific problems that occured during the implementation of the features at hand. Furthermore, selected solution methods to cope with such issues shall be presented and explained by suitable examples and experiments.
+The corresponding report to this SW contribution can be found in *report.pdf*.
+It shall outline the motivation for implementing each feature and elaborate on the possible challenges with training and validating deep learning data including specific problems that occured during the implementation of the features at hand. Furthermore, the selected solution methods to cope with described issues shall be presented and explained by means of suitable examples and experiments.
 
 ### Contact
 ludes.hanna-it19@it.dhbw-ravensburg.de

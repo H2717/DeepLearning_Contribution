@@ -5,7 +5,6 @@ giraffe
 horse
 jaguar
 lion
-
 owl
 penguin
 shark

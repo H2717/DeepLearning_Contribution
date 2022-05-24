@@ -1,0 +1,14 @@
+cat
+dog
+fish
+giraffe
+horse
+jaguar
+lion
+
+owl
+penguin
+shark
+snake
+squirrel
+tiger

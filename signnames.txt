@@ -1,0 +1,43 @@
+Geschwindigkeitsbegrenzung 20 km/h 
+Geschwindigkeitsbegrenzung 30 km/h 
+Geschwindigkeitsbegrenzung 50 km/h 
+Geschwindigkeitsbegrenzung 60 km/h 
+Geschwindigkeitsbegrenzung 70 km/h 
+Geschwindigkeitsbegrenzung 80 km/h 
+Aufhebung Geschwindigkeitsbegrenzung 80 km/h 
+Geschwindigkeitsbegrenzung 100 km/h 
+Geschwindigkeitsbegrenzung 120 km/h 
+Überholverbot PKW 
+Überholverbot LKW 
+einmalige Vorfahrt
+Vorfahrtsstraße 
+Vorfahrt gewähren 
+STOP 
+Durchfahrtverboten alle
+Durchfahrtverboten LKW 
+absolutes Durchfahrtsverbot
+Vorsicht geboten 
+Vorsicht Kurve links 
+Vorsicht Kurve rechts 
+Vorsicht Kurven 
+Vorsicht Bodenwelle 
+Vorsicht Schleudergefahr 
+Vorsicht verengte Fahrbahn 
+Vorsicht Baustelle 
+Vorsicht Ampel 
+Vorsicht Fußgänger 
+Vorsicht Kinder 
+Vorsicht Radfahrer 
+Vorsicht Eisglätte 
+Vorsicht Wild
+Aufhebung
+Gebot Rechtsabbiegen 
+Gebot Linksabbiegen 
+Gebot Geradeausfahrt 
+Gebot Geradeausfahrt oder rechts 
+Gebot Geradeausfahrt oder links 
+Gebot Vorbeifahrt rechts 
+Gebot Vorbeifahrt links 
+Kreisverkehr 
+Aufhebung Überholverbot PKW 
+Aufhebung Überholverbot LKW 

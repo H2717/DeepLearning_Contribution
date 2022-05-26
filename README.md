@@ -11,7 +11,9 @@ python ./validation_pipeline.py
 ```
 
 ### [Feature 2]: crawler.py
-To run *crawler*, please execute the following command:
+In order to adequately validate the machine learning model after extensive training, one should not use the exact same images for validation purposes as were previously in training. Therefore, it can be very helpful to have a range of additional images at hand. To prevent the user from wasting a lot of time and effort by manually acquiring those images, the search and storage of a large number of images should be made fully automatic. The *crawler.py* script is able to do so by automatically downloading images from the internet based on predefined keywords and storing them in a directory on the PC. For this purpose the package iCrawler is used which provides methods for the common search engines. The search keywords may either be entered individually by the user when running the script or read from a text file. Optionally, the user can also select between Bing and Google as their search engine of choice and additionally might automatically resized all downloaded  images to a desired format.
+
+To run the *crawler*, please execute the following command:
 ```
 python ./crawler.py -n [max. number of images] -r [no, yes] -e [bing, google] -k [optional: keyword]
 ```

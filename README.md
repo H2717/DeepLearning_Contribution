@@ -32,6 +32,8 @@ tensorflow-io-gcs-filesystem==0.23.1
 icrawler==0.6.6
 opencv-contrib-python==4.5.5.64
 matplotlib==3.5.2
+
+protobuf<=3.20.1
 ```
 
 ## Report

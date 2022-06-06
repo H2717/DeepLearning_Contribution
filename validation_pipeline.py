@@ -3,7 +3,7 @@
 # //////////////////////////////////////// Setup
 import numpy as np
 import tensorflow as tf
-import class_accuracy as clac   # Hanna Ludes
+import class_accuracy as clac   # employ SW contribution by Hanna Ludes
 
 # //////////////////////////////////////// Load model
 model_name = "4052022"
